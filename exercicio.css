@@ -37,7 +37,18 @@
   animation: 0.5s ease-in-out 0s infinite alternate piscando;
 }
 
+@keyframes girando {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
 .satisfeito {
+  outline: 5px solid green;
+  animation: 0.8s linear 0s 1 normal girando;
 }
 
 .com-raiva {
