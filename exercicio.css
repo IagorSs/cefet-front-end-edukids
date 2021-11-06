@@ -51,7 +51,17 @@
   animation: 0.8s linear 0s 1 normal girando;
 }
 
+@keyframes pulsando {
+  from {
+    transform: translateX(-20px);
+  }
+  to {
+    transform: translateX(20px);
+  }
+}
+
 .com-raiva {
+  animation: 0.2s ease-in-out 0s infinite alternate pulsando;
 }
 
 .atacando {
