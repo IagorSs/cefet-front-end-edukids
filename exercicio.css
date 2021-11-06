@@ -23,7 +23,18 @@
  *   - com-raiva: animal fica pulsando
  *   - atacando: animal dá um salto e cresce, com uma borda vermelha
  */
+
+@keyframes piscando {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.4;
+  }
+}
+
 .com-fome {
+  animation: 0.5s ease-in-out 0s infinite alternate piscando;
 }
 
 .satisfeito {
