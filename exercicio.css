@@ -46,9 +46,19 @@
   }
 }
 
+@keyframes mimando {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(0.8, 1.2);
+  }
+}
+
 .satisfeito {
   outline: 5px solid green;
-  animation: 0.8s linear 0s 1 normal girando;
+  animation: 0.4s linear 0s 1 normal girando,
+    0.2s linear 0.4s infinite alternate mimando;
 }
 
 @keyframes pulsando {
